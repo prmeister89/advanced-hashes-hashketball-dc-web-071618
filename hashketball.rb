@@ -213,7 +213,7 @@ end
 def big_shoe_rebounds
   largest_shoe_hash = {}
   shoe = 0
-  
+  rebounds = 0
   game_hash.each do |location, team|
     binding.pry
     team.each do |attributes, data|
