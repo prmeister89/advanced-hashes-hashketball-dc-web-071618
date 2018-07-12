@@ -158,7 +158,7 @@ def team_colors(x)
     team.each do |attributes, data|
       binding.pry
       if attributes == :team_name && data == x
-        return team[:colors].join(", ")
+        return team[:colors]
           end
         end
       end
