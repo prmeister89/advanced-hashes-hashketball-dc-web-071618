@@ -179,6 +179,7 @@ end
 
 def player_numbers(team_x)
   jersey_array = []
+  
   game_hash.each do |location, team|
     team.each do |name, data|
       if name == :team_name && data == team_x
