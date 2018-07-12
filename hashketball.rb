@@ -156,7 +156,7 @@ end
 def team_colors(x)
   game_hash.each do |location, team|
     team.each do |attributes, data|
-      if attributes == :team_name && :team_name == x
+      if attributes == :team_name && x
         attributes.each do |key, value|
           if key == :colors
             return value
