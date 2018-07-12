@@ -204,6 +204,7 @@ def player_stats(name)
           if name == player_names
             return stats
           end
+          binding.pry
         end
       end
     end
