@@ -203,10 +203,10 @@ def player_stats(name)
         data.each do |player_names, stats|
           if name == player_names
             return stats
+            binding.pry
           end
         end
       end
-      binding.pry
     end
   end
 end
