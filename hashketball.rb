@@ -192,6 +192,7 @@ def player_numbers(team_x)
           end
         end
       end
+    end
   end
   jersey_array
 end
