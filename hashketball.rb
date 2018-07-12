@@ -214,6 +214,7 @@ def big_shoe_rebounds
   largest_shoe_array = []
   
   game_hash.each do |location, team|
+    binding.pry
     team.each do |attributes, data|
       if attributes == :players
         data.each do |player_names, stats|
