@@ -210,4 +210,15 @@ def player_stats(name)
   end
 end
 
-def 
+def big_shoe_rebounds
+  largest_shoe_array = []
+  
+  game_hash.each do |location, team|
+    team.each do |attributes, data|
+      if attributes == :players
+        data.each do |player_names, stats|
+          stats.each do |key, value|
+            if key == :shoe
+              
+  
+  
