@@ -219,7 +219,8 @@ def big_shoe_rebounds
         data.each do |player_names, stats|
           stats.each do |key, value|
             if key == :shoe
-              largest_shoe_array << value
+              value.collect do |size|
+                size.max
             end
           end
         end
