@@ -167,7 +167,15 @@ def team_names
   team_array = []
   
   game_hash.each do |location, team|
-    
+    team.each do |name, data|
+      if name == :team_name
+        team_array << data
+      end
+    end
+  end
+  
+  team_array
+end
 
 
 
