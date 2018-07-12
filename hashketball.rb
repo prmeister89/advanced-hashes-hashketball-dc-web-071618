@@ -158,9 +158,7 @@ def team_colors(x)
     team.each do |attributes, data|
       binding.pry
       if attributes == :team_name && data == x
-        attributes.each do |key, value|
-          if key == :colors
-            return value
+      
           end
         end
       end
