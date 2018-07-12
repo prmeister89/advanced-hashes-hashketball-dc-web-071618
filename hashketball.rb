@@ -184,7 +184,7 @@ def player_numbers(team_x)
     team.each do |name, data|
       binding.pry
       if name == :team_name && data == team_x
-        data.each do |player_names, stats|
+        team[:players].each do |player_names, stats|
           stats.each do |jersey_number, value|
             if jersey_number == :number
               jersey_array << value
