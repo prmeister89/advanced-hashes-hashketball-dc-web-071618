@@ -183,6 +183,15 @@ def player_numbers(team_x)
   game_hash.each do |location, team|
     team.each do |name, data|
       if name == :team_name && data == team_x
-        data.each do |
+        data.each do |player_names, stats|
+          stats.each do |jersey_number, value|
+            if jersey_number == :number
+              jersey_array << value
+            end
+          end
+        end
+      end
+    end
+  end
 
 
