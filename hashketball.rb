@@ -158,7 +158,7 @@ def team_colors(x)
     team.each do |attributes, data|
       if data == x
         attributes.each do |key, value|
-          if key == :team_colors
+          if key == :colors
             return value
           end
         end
