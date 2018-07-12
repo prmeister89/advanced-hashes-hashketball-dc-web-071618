@@ -223,6 +223,9 @@ def big_shoe_rebounds
             if key == :shoe
               if value > shoe
                 shoe = value
+              end
+            end
+            
             end
           end
         end
