@@ -223,6 +223,7 @@ def big_shoe_rebounds
             if key == :shoe
               if value > shoe
                 shoe = value
+                rebounds = team[:players][player_name][:rebounds]
                 binding.pry
               end
             end
@@ -232,6 +233,7 @@ def big_shoe_rebounds
     end
   end
   
+  return rebounds
   
 end
   
